@@ -30,7 +30,7 @@
         <h1>🌤️ El Clima en Vivo</h1>
         <p>Escribe una ciudad para saber cómo está el clima ahora mismo gracias a la nube.</p>
         
-        <input type="text" id="ciudad" placeholder="Ej: San Luis">
+        <input type="text" id="ciudad" placeholder="Ej: Merlo, San Luis">
         <button onclick="buscarClima()">Buscar</button>
 
         <h2 id="resultado"></h2>
@@ -42,7 +42,8 @@
             const ciudad = document.getElementById('ciudad').value;
             
             // 2. ¡PEGA TU API KEY AQUÍ ABAJO!
-            const apiKey = 'PEGA_AQUI_TU_CLAVE_DE_OPENWEATHERMAP'; 
+            // const apiKey = 'PEGA_AQUI_TU_CLAVE_DE_OPENWEATHERMAP'; 
+            const apiKey = 'e6c197e445cf5fac843dd56c696a124d'; 
             
             // 3. Armamos la dirección para llamar a la API (en español y en grados Celsius)
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`;
